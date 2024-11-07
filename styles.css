@@ -69,7 +69,9 @@
   }
 
   #descricao-joias {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     text-align: center;
     margin: 150px;
   }
@@ -121,11 +123,10 @@
 
   .container-fluid {
     height: 220px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
   }
 
   .navbar-brand {
-    width: 150px;
     height: 150px;
   }
 
@@ -151,9 +152,12 @@
   }
 
   @media (max-width: 992px){
-    
+  
+ 
+
   .navbar-brand img{
-    width: 120px;
+    margin: auto;
+    width: 200px;
   }
 
   .carousel-caption h5 {
@@ -167,6 +171,14 @@
 
   .carousel {
     padding-top: 100px;
+  }
+
+  .card-container {
+    display:flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
   
 }
