@@ -6,7 +6,6 @@
     box-sizing: border-box;
   }
 
-
  .container-fluid {
     background-color: #d8cba7;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.319);
@@ -47,12 +46,12 @@
   }
 
   .carousel-caption h5 {
-    font-size: 6rem;
+    font-size: 4.2rem;
     font-weight: bold;
   }
 
   .carousel-caption p {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
 
   .btn-custom {
@@ -153,15 +152,17 @@
 
   @media (max-width: 992px){
   
- 
+  .navbar-nav {
+    gap: 20px;
+  }
 
   .navbar-brand img{
-    margin: auto;
+    transform: translateX(5%);
     width: 200px;
   }
 
   .carousel-caption h5 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bold;
   }
 
