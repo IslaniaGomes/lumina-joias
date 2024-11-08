@@ -174,7 +174,7 @@
   @media (max-width: 992px){
   
   .container-fluid {
-    padding-bottom: 10px;
+    padding-bottom: 30px;
   }
 
   .navbar-nav {
@@ -192,9 +192,10 @@
   }
 
   form {
-    transform: translate(0%, 10%);
-    padding-bottom: 50px;
-    margin: auto;
+    margin-top: 30px;
+    transform: translate(0%, 0%);
+    padding-bottom: 20px;
+  
   }
 
   .carousel-caption h5 {
