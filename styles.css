@@ -6,14 +6,14 @@
   box-sizing: border-box;
 }
 
-main {
-  overflow: hidden;
+html, body {
+  overflow-x: hidden;
 }
 
+
 .container-fluid {
- 
+  display: flex;
   background-color: #d8cba7;
-  background-color: red;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.319);
   position: fixed;
   width: 100%;
@@ -25,7 +25,8 @@ main {
 }
 
 .box-logo {
-  background-color: blue;
+
+  width: 300px;
   height: 170px;
   transform: translateY(-30%);
 }
@@ -35,20 +36,30 @@ main {
   margin: auto;
 }
 
-.navbar-nav {
-  background-color: pink;
-  font-size: 1.2em;
-  flex-wrap: wrap;
-  margin: auto;
-}
 
 .navbar-collapse{
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    background-color: green;
-    padding: 30px;
+  display: flex;
+  background-color: #d8cba7;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  transform:translateY(-50%) ;
+  padding: 30px;
 }
+
+
+.navbar-nav {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  gap: 50px;
+  font-size: 1.2em;
+  flex-wrap: nowrap;
+  transform: translateX(10%);
+}
+
 
 ul > li .dropdown-menu {
   background-color: #ded0ab;
@@ -175,112 +186,46 @@ h1, h2 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 100%;
-
+  width: 100vw;
 }
 
 .imgloja-1, .imgloja-2 {
-  width: 700px;
-  padding: 20px;
+  width: 600px;
 }
 
+
+
 .hist-text1 , .hist-text2{ 
-  width: 700px;
+  width: 600px;
   height: 300px;
-  padding: 20px;
+  margin-right: 80px;
+  margin-left: 80px;
+  margin-bottom: 60px;
+}
+
+.hist-text1 p {
+ margin-top: 50px;
+ transform: translateX(-15%);
+}
+
+
+.hist-text2 p {
+  margin-top: 50px;
 }
 
 .imgloja-1 img {
-  width: 900px;
+  width: 800px;
   object-fit: cover;
+  transform: translateX(-5%);
+
 }
 
 .imgloja-2 img {
   width: 700px;
   object-fit: cover;
+  transform: translateX(-25%);
 }
 
-@media (max-width: 992px) {
-  
-  .container-fluid {
-    padding-bottom: 30px;
-  }
-
-  .navbar-nav {
-    transform: translateX(0%);
-    gap: 30px;
-  }
-
-  .navbar-brand img {
-    transform: translateX(5%);
-    width: 200px;
-  }
-
-
-  .dropdown-menu {
-    width: 150px;
-  }
-
-  form {
-    margin-top: 30px;
-    transform: translate(0%, 0%);
-    padding-bottom: 20px;
-  }
-
-  .carousel-caption h5 {
-    font-size: 2.2rem;
-    font-weight: bold;
-  }
-
-  .carousel-caption p {
-    font-size: 1rem;
-  }
-
-  .carousel {
-    padding-top: 100px;
-  }
-
-  .card-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-
-  #hist-box1, #hist-box2 {
-  
-    display: flex;
-    flex-direction: collum;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-
-  .imgloja-1, .imgloja-2 {
-    width: 300px;
-    padding: 20px;
-    margin: auto;
-  }
-  
-  .hist-text1, .hist-text2{ 
-    width: 100%;
-    height: 700px;
-    height:300px;
-    margin-bottom: 20px;
-  }
-
-  .imgloja-1 img {
-    width: 300px;
-    object-fit: cover;
-  }
-  
-  .imgloja-2 img {
-    width: 300px;
-    object-fit: cover;
-    margin-top: 100px;
-  }
 
   
-}
+
