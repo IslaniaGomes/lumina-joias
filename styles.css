@@ -383,19 +383,18 @@
 
 }
 
-@media (max-width: 1021px) and (min-width: 991px) {
+@media  (min-width: 991px) and (max-width: 1021px) {
     
   div.navbar-collapse {
       top: 80%; 
   }
   
   form {
-    margin-left: 50px;
+    margin-left: 70px;
   }
 
   .card-container {
     flex-wrap: nowrap;
   }
-
   
 }
