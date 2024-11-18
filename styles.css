@@ -1,231 +1,401 @@
 @charset "UTF-8";
 
-* {
-  padding: 0px;
-  margin: 0px;
-  box-sizing: border-box;
+  * {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    overflow-x: hidden;
+  }
+
+  .container-fluid {
+    display: flex;
+    background-color: #d8cba7;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.319);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    text-align: center;
+    height: 220px;
+    padding-bottom: 40px;
+  }
+
+  .box-logo {
+    width: 300px;
+    height: 170px;
+    transform: translateY(-30%);
+  }
+
+  .box-logo img {
+    width: 300px;
+    margin: auto;
+  }
+
+  .navbar-collapse {
+    display: flex;
+    background-color: #d8cba7;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    transform: translateY(-50%);
+    padding: 30px;
+  }
+
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    gap: 50px;
+    font-size: 1.2em;
+    flex-wrap: nowrap;
+    transform: translateX(10%);
+  }
+
+  ul > li .dropdown-menu {
+    background-color: #ded0ab;
+  }
+
+  .dropdown-menu .dropdown-item {
+    text-align: center;
+  }
+
+  ul > li .dropdown-item:hover {
+    background-color: #212529;
+    color: #fff;
+  }
+
+  .navbar .dropdown-menu .dropdown-item.active,
+  .navbar .dropdown-menu .dropdown-item:active {
+    background-color: #212529;
+  }
+
+  form {
+    margin-left: 60px;
+  }
+
+  main {
+    background-color: #fefdeb;
+    min-height: 100vh;
+  }
+
+  .carousel {
+    padding-top: 175px;
+  }
+
+  .carousel-inner img {
+    height: 500px;
+    object-fit: cover;
+  }
+
+  .carousel-caption {
+    right: 15%;
+    left: 15%;
+    text-align: left;
+    color: #000;
+  }
+
+  .carousel-caption h5 {
+    font-size: 4rem;
+    font-weight: bold;
+  }
+
+  .carousel-caption p {
+    font-size: 1.5rem;
+  }
+
+  .btn-custom {
+    background-color: #f1c40f;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .btn-custom:hover {
+    background-color: #f39c12;
+  }
+
+  #descricao-joias {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 140px;
+    margin-bottom: 60px;
+  }
+
+  #descricao-joias img {
+    width: 50px ;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding: 10px;
+    margin-bottom: 60px;
+  }
+
+  .card {
+    position: relative;
+    width: 250px;
+    height: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    gap: 10px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+    cursor: pointer;
+  }
+
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s;
+  }
+
+  .card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #d8cba7ac;
+    transition: opacity 0.3s;
+    opacity: 0;
+  }
+
+  .card:hover::after {
+    opacity: 1;
+  }
+
+  h1, h2 {
+    text-align: center;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.079);
+    padding-bottom: 10px;
+  }
+
+  .section  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+
+  .imgloja-1, .imgloja-2 {
+    width: 600px;
+  }
+
+  .hist-text1, .hist-text2 {
+    width: 600px;
+    margin-right: 80px;
+    margin-left: 80px;
+    margin-bottom: 60px;
+  }
+
+  .hist-text1 p {
+    margin-top: 70px;
+    transform: translateX(-15%);
+    text-align: left;
+  }
+
+  .hist-text2 p {
+    margin-top: 70px;
+    text-align: left;
+  }
+
+  .imgloja-1 img {
+    width: 800px;
+    object-fit: cover;
+    transform: translateX(-5%);
+  }
+
+  .imgloja-2 img {
+    width: 700px;
+    object-fit: cover;
+    transform: translateX(-25%);
+  }
+
+@media (max-width: 992px) {
+    
+  .box-logo {
+    width: 300px;
+    height: 170px;
+    transform: translateY(-30%);
+  }
+
+  .box-logo img {
+    width: 280px;
+    margin: auto;
+  }
+
+  .navbar-toggler {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 11;
+  }
+
+  .navbar-collapse {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d8cba7;
+    width: 100%;
+    padding: 30px;
+    position: absolute;
+    top: 350px;
+    left: 0;
+    z-index: 10;
+  }
+
+  ul.navbar-nav {
+    transform: translateX(1%);
+  }
+
+  .navbar-collapse.show {
+    display: flex;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    margin: auto;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .carousel {
+    padding-top: 120px;
+  }
+
+  .carousel-inner img {
+    height: 500px;
+    object-fit: cover;
+  }
+
+  .carousel-caption {
+    right: 15%;
+    left: 15%;
+    text-align: left;
+    color: #000;
+  }
+
+  .carousel-caption h5 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+
+  #descricao-joias {
+    text-align: center;
+  }
+  
+  .card-container {
+    margin-bottom: 90px;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 200px;
+    gap: 10px;
+    margin-right: 10px;
+  }
+
+  .card img {
+    height: 150px;
+  }
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+  }
+
+   .section:first-child .hist-text1 {
+    order: 2; 
+  }
+
+  .section:first-child .imgloja-1 {
+    order: 1;
+  }
+
+ 
+  .section:last-child .hist-text2 {
+    order: 2; 
+  }
+
+  .section:last-child .imgloja-2 {
+    order: 1;
+  }
+
+  #hist-box1, #hist-box2 {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    text-align: center;     
+  }
+
+
+  .imgloja-1, .imgloja-2 {
+    width: 500px;            
+    margin-bottom: 10px;  
+  }
+
+  .imgloja-1 img, .imgloja-2 img {
+    width: 500px;        
+    border-radius: 50%;     
+    object-fit: cover;    
+    transform: translateX(0%);
+    margin: 0px;
+  }
+
+  .hist-text1, .hist-text2 {
+    width: 60%;          
+  }
+
+  .hist-text1 p, .hist-text2 p {
+    font-size: 1rem;      
+    line-height: 1.5;       
+    transform: translateX(0%);
+    margin: auto;
+    text-align: center;
+  }
+
 }
 
-html, body {
-  overflow-x: hidden;
-}
+@media (max-width: 1021px) and (min-width: 991px) {
+    
+  div.navbar-collapse {
+      top: 80%; 
+  }
+  
+  form {
+    margin-left: 50px;
+  }
 
-
-.container-fluid {
-  display: flex;
-  background-color: #d8cba7;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.319);
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 10;
-  text-align: center;
-  height: 220px;
-  padding-bottom: 40px;
-}
-
-.box-logo {
-
-  width: 300px;
-  height: 170px;
-  transform: translateY(-30%);
-}
-
-.box-logo img {
-  width: 300px;
-  margin: auto;
-}
-
-
-.navbar-collapse{
-  display: flex;
-  background-color: #d8cba7;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  transform:translateY(-50%) ;
-  padding: 30px;
-}
-
-
-.navbar-nav {
-  display: flex;
-
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-  gap: 50px;
-  font-size: 1.2em;
-  flex-wrap: nowrap;
-  transform: translateX(10%);
-}
-
-
-ul > li .dropdown-menu {
-  background-color: #ded0ab;
-}
-
-.dropdown-menu .dropdown-item {
-  text-align: center;
-}
-
-ul > li .dropdown-item:hover {
-  background-color: #212529;
-  color: #fff;
-}
-
-.navbar .dropdown-menu .dropdown-item.active,
-.navbar .dropdown-menu .dropdown-item:active {
-  background-color: #212529;
-}
-
-
-
-main {
-  background-color: #fefdeb;
-}
-
-.carousel {
-  padding-top: 190px;
-}
-
-.carousel-inner img {
-  height: 500px;
-  object-fit: cover;
-}
-
-.carousel-caption {
-  right: 15%;
-  left: 15%;
-  text-align: left;
-  color: #000;
-}
-
-.carousel-caption h5 {
-  font-size: 4.2rem;
-  font-weight: bold;
-}
-
-.carousel-caption p {
-  font-size: 1.5rem;
-}
-
-.btn-custom {
-  background-color: #f1c40f;
-  color: #000;
-  border: none;
-  padding: 10px 20px;
-  font-size: 1rem;
-  font-weight: bold;
-}
-
-.btn-custom:hover {
-  background-color: #f39c12;
-}
-
-#descricao-joias {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  flex-wrap: wrap;
-  margin: 150px;
-}
-
-.card-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.card {
-  position: relative;
-  width: 250px;
-  height: 300px;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
-  overflow: hidden;
-  background-color: #fff;
-  gap: 20px;
-  margin-right: 15px;
-  margin-bottom: 130px;
-  cursor: pointer;
-}
-
-.card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  transition: transform 0.3s;
-}
-
-.card::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #d8cba7ac;
-  transition: opacity 0.3s;
-  opacity: 0;
-}
-
-.card:hover::after {
-  opacity: 1;
-}
-
-h1, h2 {
-  text-align: center;
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.079);
-}
-
-#hist-box1, #hist-box2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-}
-
-.imgloja-1, .imgloja-2 {
-  width: 600px;
-}
-
-
-
-.hist-text1 , .hist-text2{ 
-  width: 600px;
-  height: 300px;
-  margin-right: 80px;
-  margin-left: 80px;
-  margin-bottom: 60px;
-}
-
-.hist-text1 p {
- margin-top: 50px;
- transform: translateX(-15%);
-}
-
-
-.hist-text2 p {
-  margin-top: 50px;
-}
-
-.imgloja-1 img {
-  width: 800px;
-  object-fit: cover;
-  transform: translateX(-5%);
-
-}
-
-.imgloja-2 img {
-  width: 700px;
-  object-fit: cover;
-  transform: translateX(-25%);
-}
-
+  .card-container {
+    flex-wrap: nowrap;
+  }
 
   
-
+}
