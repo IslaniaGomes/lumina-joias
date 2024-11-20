@@ -230,6 +230,10 @@
     transform: translateX(-25%);
   }
 
+
+
+
+
 @media (max-width: 992px) {
     
   .box-logo {
@@ -379,6 +383,22 @@
     transform: translateX(0%);
     margin: auto;
     text-align: center;
+  }
+
+}
+
+@media (min-width: 320px)and (max-width: 396px){
+
+  .imgloja-2 img {
+    width: 400px;        
+    border-radius: 50%;     
+    object-fit: cover;    
+    transform: translateX(8%);
+  }
+
+  form {
+    width: 277px;
+    margin: auto;
   }
 
 }
