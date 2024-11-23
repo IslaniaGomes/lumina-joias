@@ -197,7 +197,7 @@
   }
 
   #section2 {
-    padding-bottom: 10px;
+    padding-bottom: 120px;
   }
 
   .imgloja-1, .imgloja-2 {
@@ -243,8 +243,8 @@
   }
 
   .img-box {
-    width: 340px;
-    transform: translateX(20%);
+    width: 350px;
+    transform: translateX(18%);
   }
 
   .img-box img {
@@ -481,12 +481,23 @@
   }
 
   .img-box {
-    width: 300px;
+    width: 340px;
     transform: translateX(0%);
   }
 
+  .img-box img {
+    width: 100%;
+  }
+
+  
   #form {
-    margin: auto;
+    height: auto;
+    padding: 25px 20px 25px 20px;
+    margin: 0;
+  }
+  
+  #section2 {
+    padding-bottom: 30px;
   }
 
 }
@@ -506,29 +517,16 @@
   }
 
   .img-box {
-    width: 300px;
+    width: 320px;
     transform: translateX(0%);
   }
 
-
-
-  #form {
-    padding: 25px 20px 25px 20px;
-    background-color: #212529;
-    border-radius: 3px 6px 3px 6px;
-    text-shadow: 2px 2px 3px #d8cba72b;
-    color: #d8cba7;
+  .img-box img {
+    width: 100%;
   }
 
-  #form p {
-    font-size: 1.5em;
-    text-align: center;
-  }
-
-  #form .input-box {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
+  #section2 {
+    padding-bottom: 30px;
   }
 
 }
@@ -546,5 +544,18 @@
   .card-container {
     flex-wrap: nowrap;
   }
-  
+
+  .img-box {
+    width: 320px;
+    transform: translateX(22%);
+  }
+
+  .img-box img {
+    width: 100%;
+  }
+
+  #section2 {
+    padding-bottom: 30px;
+  }
+
 }
