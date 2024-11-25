@@ -243,7 +243,7 @@
   }
 
   .img-box {
-    width: 350px;
+    width: 360px;
     transform: translateX(18%);
   }
 
@@ -252,6 +252,7 @@
   }
 
   #form {
+    width: 350px;
     height: auto;
     padding: 25px 20px 25px 20px;
     background-color: #212529;
@@ -288,8 +289,25 @@
       
   }
 
+
+
   input:focus {
     border-bottom: 2px solid #d8cba7;
+  }
+
+  #endereco {
+    width: 100%;
+    height: 30px;  /* Ajuste conforme necessário */
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #d8cba7; 
+    color: #fff;
+    outline: none;
+    resize: none; /* Remove a opção de redimensionar o campo */
+}
+
+  #endereco:focus {
+    border-bottom: 2px solid #d8cba7; /* Alterar cor ao focar */
   }
 
   .btn-form {
@@ -312,13 +330,12 @@
     background-image:linear-gradient(to right, #d8cba7,#a79f8a) ;
   }
 
-
   footer {
-    background-color: #d8cba7;
-    color: #000;
+    width: 100vw;
+    padding: 3px;
     text-align: center;
-    padding: 2px;
-  }
+    background-color: #fffee2;
+ }
 
   footer a {
     color: #000;
@@ -326,7 +343,7 @@
   }
 
   footer p {
-    padding-top: 20px;
+   margin: auto;
   }
 
 @media (max-width: 992px) {
@@ -481,7 +498,7 @@
   }
 
   .img-box {
-    width: 340px;
+    width: 360px;
     transform: translateX(0%);
   }
 
@@ -517,7 +534,7 @@
   }
 
   .img-box {
-    width: 320px;
+    width: 280px;
     transform: translateX(0%);
   }
 
