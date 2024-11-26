@@ -240,6 +240,7 @@
     align-items: center;
     flex-wrap: wrap;
     background-color: #d8cba7;
+    padding-bottom: 50px;
   }
 
   .img-box {
@@ -289,26 +290,21 @@
       
   }
 
-
-
   input:focus {
     border-bottom: 2px solid #d8cba7;
   }
 
   #endereco {
     width: 100%;
-    height: 30px;  /* Ajuste conforme necessário */
+    height: 30px;  
     border: none;
     background-color: transparent;
     border-bottom: 2px solid #d8cba7; 
     color: #fff;
     outline: none;
-    resize: none; /* Remove a opção de redimensionar o campo */
+    resize: none; 
 }
 
-  #endereco:focus {
-    border-bottom: 2px solid #d8cba7; /* Alterar cor ao focar */
-  }
 
   .btn-form {
     display: flex;
@@ -332,18 +328,20 @@
 
   footer {
     width: 100vw;
-    padding: 3px;
+    padding: 10px;
     text-align: center;
-    background-color: #fffee2;
- }
-
-  footer a {
-    color: #000;
-    text-decoration:none;
+    background-color: #1e2225;
   }
 
   footer p {
-   margin: auto;
+    color: #fff;
+    margin: auto;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.079);
+  }
+
+  footer a {
+    color: #fff;
+    text-decoration:none;
   }
 
 @media (max-width: 992px) {
@@ -498,7 +496,7 @@
   }
 
   .img-box {
-    width: 360px;
+    width: 350px;
     transform: translateX(0%);
   }
 
@@ -534,7 +532,7 @@
   }
 
   .img-box {
-    width: 280px;
+    width: 350px;
     transform: translateX(0%);
   }
 
@@ -563,7 +561,7 @@
   }
 
   .img-box {
-    width: 320px;
+    width: 350px;
     transform: translateX(22%);
   }
 

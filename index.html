@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lumina Joias</title>
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -27,7 +28,7 @@
             <div class="collapse navbar-collapse " id="navbarSupportedContent">
                 <ul class="navbar-nav mb-2 mb-lg-0 ">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Nossa História</a>
+                        <a class="nav-link" aria-current="page" href="#historia">Nossa História</a>
                     </li>
                     
                     <li class="nav-item dropdown">
@@ -44,7 +45,7 @@
                         <a class="nav-link" href="#">Lançamentos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
+                        <a class="nav-link" href="#contato">Contato</a>
                     </li>
                 </ul>
                 <div>
@@ -58,7 +59,6 @@
         </div>
     </nav>
 </header>
-
 
     <main>
         <div id="joiasCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -114,7 +114,7 @@
                 <img src="imagens/card-colares.webp"  alt="colares">
                 <p>COLARES</p>
             </div>
-            <div class="card">
+            <div class="card" id="historia">
                 <img src="imagens/card-pulseiras.webp"  alt="pulseiras">
                 <p>PULSEIRAS</p>
             </div>
@@ -123,10 +123,11 @@
                 <p>CONJUNTOS</p>
             </div>
         </div>
+    
+            <h2 >Nossa História</h2>
         
-        <h2>Nossa História</h2>
-
         <div class="section">
+           
             <div class="imgloja-1" data-aos="fade-right">
               <img src="imagens/loja-frente.png" alt="Imagem 1">
             </div>
@@ -145,7 +146,7 @@
           </div>
     </main>
     
-         <div class="contatos-box">
+         <div class="contatos-box" id="contato">
 
             <div class="img-box">
                 <img src="imagens/img-banner.png" alt="mulher com joias">
@@ -174,7 +175,7 @@
                     </form>
          </div>
      <footer>
-        <p>Desenvolvido por <a href="https://github.com/IslaniaGomes">Islânia Gomes</a></p>
+        <p>Desenvolvido por <a href="https://github.com/IslaniaGomes"><strong>Islânia Gomes</strong></a></p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
