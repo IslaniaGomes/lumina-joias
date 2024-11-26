@@ -9,9 +9,8 @@ form.addEventListener('submit', (event) => {
 
    
     inputs.forEach(input => {
-        if (input.disabled) return;
 
-        if (input.value.trim() === '') {
+        if (input.value === '') {
             campPreenchidos = false; 
         }
     });
@@ -20,7 +19,7 @@ form.addEventListener('submit', (event) => {
     textareas.forEach(textarea => {
         if (textarea.disabled) return;
 
-        if (textarea.value.trim() === '') { 
+        if (textarea.value === '') { 
             campPreenchidos = false;
         }
     });
